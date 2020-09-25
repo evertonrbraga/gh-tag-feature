@@ -34,7 +34,7 @@ export const Container = styled.div`
           padding: 15px;
           border: 2px solid #e5e5e5;
           border-radius: 5px;
-          width: 470px;
+          width: 380px;
         }
       }
     }

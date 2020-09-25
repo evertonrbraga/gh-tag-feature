@@ -1,6 +1,6 @@
 import React from "react";
 
-import Infos from "./pages/home";
+import Routes from "./routes";
 import GlobalStyle from "./styles/global";
 import { Container } from "./styles/App";
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <Container>
       <GlobalStyle />
-      <Infos />
+      <Routes />
     </Container>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import homeImage from "../../assets/home-image.svg";
 import githubIcon from "../../assets/github-medium-icon.svg";
@@ -16,12 +17,14 @@ const Home = () => {
             <p>Cadastre um usuário com uma conta válida no GitHub</p>
             <input placeholder="@username" />
             <Button text="Cadastrar" />
-            <Button text="Ver usuários" />
+            <Link to="/users">
+              <Button text="Ver usuários" width="100%" bottom="0" />
+            </Link>
           </div>
         </div>
       </div>
       <div className="image">
-        <img src={homeImage} alt="Home image" />
+        <img src={homeImage} alt="Man at work" />
         <h2>
           Gerencie e adicione <span className="bold">tags</span> aos seus{" "}
           <span className="bold">repositórios</span> favoritos.
