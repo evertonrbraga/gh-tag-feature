@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   MdLocationOn,
   MdDomain,
@@ -16,11 +17,13 @@ const Repo = () => {
         <div className="top">
           <img
             src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
-            alt=""
+            alt="User photo"
           />
           <div className="infos">
             <div className="main-name">
-              <h2>John Doe Santos</h2>
+              <Link to="/user">
+                <h2>John Doe Santos</h2>
+              </Link>
               <MdKeyboardArrowRight className="icon" />
             </div>
             <p>@johndoesantos</p>
