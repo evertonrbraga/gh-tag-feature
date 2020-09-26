@@ -16,7 +16,7 @@ const Header = ({ addUser = false }) => {
         </Link>
 
         {addUser && (
-          <div>
+          <div class="add-user-container">
             <Input prefix={<MdSearch />} />
             <Button text="Adicionar novo" width="200px" bottom="0" />
           </div>

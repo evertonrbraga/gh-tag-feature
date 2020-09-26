@@ -21,8 +21,8 @@ export const Container = styled.div`
       img {
         border-radius: 50px;
         margin-right: 15px;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
       }
 
       .infos {
@@ -32,23 +32,20 @@ export const Container = styled.div`
 
           h2 {
             display: inline-block;
-            margin-right: 15px;
+            margin: 0 5px 0 0;
           }
         }
 
         .icon {
           font-size: 1.6em;
-        }
-
-        p {
-          margin-top: 5px;
+          margin-top: 2px;
         }
       }
     }
 
     .bottom {
       display: flex;
-      margin: 15px 10px 0px;
+      margin: 12px 10px 0px;
 
       span {
         display: flex;
@@ -70,16 +67,16 @@ export const Container = styled.div`
 
     .icon-container {
       background: gray;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       position: relative;
       background: #e8e8e8;
       border-radius: 25px;
 
       .icon {
         position: absolute;
-        top: 7px;
-        left: 9px;
+        top: 5px;
+        left: 5px;
         font-size: 1.4em;
       }
     }
