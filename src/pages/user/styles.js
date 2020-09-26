@@ -29,7 +29,7 @@ export const Container = styled.div`
       .card {
         .black-part {
           background: #000;
-          height: 70px;
+          height: 60px;
           display: flex;
           justify-content: center;
           position: relative;
@@ -37,16 +37,16 @@ export const Container = styled.div`
 
           .icon {
             position: absolute;
-            top: 25px;
-            left: 25px;
+            top: 21px;
+            left: 17px;
             font-size: 1.3em;
             color: #fff;
           }
 
           img {
             position: absolute;
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             margin-top: 20px;
             border-radius: 50px;
           }
@@ -57,11 +57,12 @@ export const Container = styled.div`
           margin: 0 auto;
 
           h2 {
-            margin: 50px 0 3px;
+            margin: 47px 0 0;
+            font-weight: 700;
           }
 
           p {
-            margin-bottom: 2px;
+            margin-bottom: 0;
           }
 
           .data-info {
@@ -93,6 +94,15 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
 
+        h3 {
+          font-weight: 700;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+        }
+
         .info-container {
           .data-info {
             display: flex;
@@ -100,7 +110,7 @@ export const Container = styled.div`
             margin-bottom: 5px;
 
             p {
-              margin-left: 10px;
+              margin: 0 0 0 10px;
             }
           }
         }
@@ -122,13 +132,18 @@ export const Container = styled.div`
           flex-direction: column;
           justify-content: space-evenly;
 
+          h3 {
+            font-weight: 700;
+            margin: 0;
+          }
+
           .data-info {
             display: flex;
             align-items: center;
             margin-bottom: 5px;
 
             p {
-              margin-left: 10px;
+              margin: 0 0 0 10px;
             }
           }
         }
@@ -138,7 +153,7 @@ export const Container = styled.div`
     .box04 {
       grid-column: 2/4;
       grid-row: 1/6;
-      padding: 15px;
+      padding: 15px 0;
 
       .card {
         height: 96%;
@@ -150,15 +165,21 @@ export const Container = styled.div`
         justify-content: space-between;
         padding: 0 15px;
 
-        /* input {
-          margin: 25px 0;
-          padding: 15px;
-          border: 2px solid #e5e5e5;
-          border-radius: 5px;
-          width: 48%;
+        .ant-input-affix-wrapper:nth-child(1) {
+          margin: 0 10px 15px 0;
+          padding: 10px;
           border: none;
+          border-radius: 5px;
           box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.1);
-        } */
+        }
+
+        .ant-input-affix-wrapper:nth-child(2) {
+          margin: 0 0 15px 10px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.1);
+        }
       }
     }
   }

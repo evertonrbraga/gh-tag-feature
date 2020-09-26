@@ -46,6 +46,7 @@ export const Container = styled.div`
     .bottom {
       display: flex;
       margin: 12px 10px 0px;
+      color: #7e7e7e;
 
       span {
         display: flex;

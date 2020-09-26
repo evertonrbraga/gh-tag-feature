@@ -95,7 +95,6 @@ const User = () => {
           </div>
           <Repo />
           <Repo />
-          <CustomTag />
         </div>
       </div>
     </Container>

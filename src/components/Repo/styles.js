@@ -33,6 +33,7 @@ export const Container = styled.div`
           h3 {
             display: inline-block;
             font-weight: 700;
+            margin-bottom: 0;
           }
         }
 
@@ -41,13 +42,13 @@ export const Container = styled.div`
         }
 
         p {
-          margin-top: 5px;
+          margin: 0 5px 0 0;
         }
 
         .tag {
           cursor: pointer;
           color: #0017ff;
-          padding: 5px 10px;
+          padding: 2px 7px 2px 9px;
           background: #ebedff;
           border-radius: 25px;
           display: flex;
@@ -62,16 +63,16 @@ export const Container = styled.div`
           .icon-container {
             background: #0017ff;
             position: relative;
-            width: 20px;
-            height: 20px;
+            width: 14px;
+            height: 14px;
             border-radius: 25px;
 
             .icon {
               position: absolute;
               color: #fff;
-              font-size: 0.7em;
-              top: 5px;
-              left: 5px;
+              font-size: 0.6em;
+              top: 3px;
+              left: 3px;
             }
           }
         }
@@ -81,6 +82,7 @@ export const Container = styled.div`
     .bottom {
       display: flex;
       margin: 0 10px 0;
+      color: #7e7e7e;
 
       span {
         display: flex;
@@ -102,15 +104,15 @@ export const Container = styled.div`
 
     .icon-container {
       background: #f9f1d1;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       position: relative;
       border-radius: 25px;
 
       .icon {
         position: absolute;
-        top: 7px;
-        left: 9px;
+        top: 5px;
+        left: 5px;
         font-size: 1.4em;
         color: #ffc700;
       }
