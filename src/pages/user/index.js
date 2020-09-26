@@ -11,7 +11,6 @@ import {
 } from "react-icons/md";
 import { BsBookmarksFill } from "react-icons/bs";
 
-import CustomTag from "../../components/CustomTag";
 import Header from "../../components/Header";
 import Repo from "../../components/Repo";
 import { Container } from "./styles";
@@ -30,7 +29,7 @@ const User = () => {
 
               <img
                 src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
-                alt="User photo"
+                alt="User avatar"
               />
             </div>
 

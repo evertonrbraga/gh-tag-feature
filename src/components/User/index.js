@@ -17,7 +17,7 @@ const Repo = () => {
         <div className="top">
           <img
             src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
-            alt="User photo"
+            alt="User avatar"
           />
           <div className="infos">
             <div className="main-name">
