@@ -4,6 +4,11 @@ export const Container = styled.div`
   display: flex;
   height: 100vh;
 
+  .ant-input-affix-wrapper {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
   .infos {
     display: flex;
     justify-content: center;
@@ -21,20 +26,22 @@ export const Container = styled.div`
         flex-direction: column;
 
         h2 {
-          margin-top: 70px;
+          margin: 70px 0 0;
+          font-weight: 700;
         }
 
-        p {
+        .description {
           color: #7e7e7e;
           font-size: 0.9em;
         }
 
-        input {
-          margin: 25px 0;
-          padding: 15px;
-          border: 2px solid #e5e5e5;
-          border-radius: 5px;
-          width: 380px;
+        .icon {
+          color: #e5e5e5;
+          font-size: 1.6em;
+        }
+
+        .button-component {
+          margin-top: 25px;
         }
       }
     }

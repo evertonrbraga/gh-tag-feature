@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Input } from "antd";
+import { MdAccountCircle } from "react-icons/md";
 
 import homeImage from "../../assets/home-image.svg";
 import githubIcon from "../../assets/github-medium-icon.svg";
@@ -14,11 +16,16 @@ const Home = () => {
           <img src={githubIcon} alt="Github icon" />
           <div className="form-contents">
             <h2>Cadastrar usuário</h2>
-            <p>Cadastre um usuário com uma conta válida no GitHub</p>
-            <input placeholder="@username" />
-            <Button text="Cadastrar" />
+            <p className="description">
+              Cadastre um usuário com uma conta válida no GitHub
+            </p>
+            <Input
+              prefix={<MdAccountCircle className="icon" />}
+              placeholder="@username"
+            />
+            <Button text="Cadastrar" margin="20px 0 10px" />
             <Link to="/users">
-              <Button text="Ver usuários" width="100%" bottom="0" />
+              <Button text="Ver usuários" width="100%" />
             </Link>
           </div>
         </div>

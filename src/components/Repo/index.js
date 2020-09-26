@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Modal, Input } from "antd";
 import {
+  MdSearch,
   MdLocationOn,
   MdDomain,
   MdStar,
@@ -8,9 +10,20 @@ import {
 } from "react-icons/md";
 import { FaTags } from "react-icons/fa";
 
+import { Button } from "../../components/Button";
+import CustomTag from "../../components/CustomTag";
 import { Container } from "./styles";
 
 const Repo = () => {
+  const [visible, setVisible] = useState(false);
+
+  const handleOk = () => {
+    setVisible(false);
+  };
+
+  const handleCancel = () => {
+    setVisible(false);
+  };
   return (
     <Container>
       <div className="left-side">
@@ -25,7 +38,7 @@ const Repo = () => {
             <p>
               Project application with component animations with React Native
             </p>
-            <div className="tag">
+            <div className="tag" onClick={() => setVisible(true)}>
               <p>Gerenciar tags</p>
               <div className="icon-container">
                 <FaTags className="icon" />
@@ -53,6 +66,19 @@ const Repo = () => {
           <MdStar className="icon" />
         </div>
       </div>
+      <Modal
+        centered
+        title="Basic Modal"
+        visible={visible}
+        onOk={handleOk}
+        footer={null}
+        onCancel={handleCancel}
+      >
+        <Input prefix={<MdSearch />} />
+        <Button text="Salvar" width="100%" />
+        <p>Cancelar</p>
+        <CustomTag />
+      </Modal>
     </Container>
   );
 };

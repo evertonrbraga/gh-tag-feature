@@ -1,7 +1,17 @@
 import React from "react";
-import { MdLocationOn, MdDomain, MdLink, MdArrowBack } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { Input } from "antd";
+import {
+  MdSearch,
+  MdFilterList,
+  MdLocationOn,
+  MdDomain,
+  MdLink,
+  MdArrowBack,
+} from "react-icons/md";
 import { BsBookmarksFill } from "react-icons/bs";
 
+import CustomTag from "../../components/CustomTag";
 import Header from "../../components/Header";
 import Repo from "../../components/Repo";
 import { Container } from "./styles";
@@ -14,7 +24,10 @@ const User = () => {
         <div className="box box01">
           <div className="card">
             <div className="black-part">
-              <MdArrowBack className="icon" />
+              <Link to="/users">
+                <MdArrowBack className="icon" />
+              </Link>
+
               <img
                 src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
                 alt="User photo"
@@ -76,8 +89,13 @@ const User = () => {
           </div>
         </div>
         <div className="box box04">
+          <div className="input-container">
+            <Input prefix={<MdSearch />} />
+            <Input prefix={<MdFilterList />} />
+          </div>
           <Repo />
           <Repo />
+          <CustomTag />
         </div>
       </div>
     </Container>

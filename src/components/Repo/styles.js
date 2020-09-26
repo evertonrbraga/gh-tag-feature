@@ -45,6 +45,7 @@ export const Container = styled.div`
         }
 
         .tag {
+          cursor: pointer;
           color: #0017ff;
           padding: 5px 10px;
           background: #ebedff;

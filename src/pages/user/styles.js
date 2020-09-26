@@ -14,11 +14,11 @@ export const Container = styled.div`
 
     .box {
       .card {
-        border: 2px solid blue;
         height: 90%;
         border-radius: 10px;
         margin: 5%;
         background: #fff;
+        box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.1);
       }
     }
 
@@ -33,6 +33,7 @@ export const Container = styled.div`
           display: flex;
           justify-content: center;
           position: relative;
+          border-radius: 10px 10px 0 0;
 
           .icon {
             position: absolute;
@@ -142,6 +143,22 @@ export const Container = styled.div`
       .card {
         height: 96%;
         margin: 1.5%;
+      }
+
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+
+        /* input {
+          margin: 25px 0;
+          padding: 15px;
+          border: 2px solid #e5e5e5;
+          border-radius: 5px;
+          width: 48%;
+          border: none;
+          box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.1);
+        } */
       }
     }
   }
