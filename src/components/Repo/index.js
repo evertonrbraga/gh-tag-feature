@@ -14,7 +14,7 @@ import { Button } from "../../components/Button";
 import CustomTag from "../../components/CustomTag";
 import { Container } from "./styles";
 
-const Repo = () => {
+const Repo = ({ repo }) => {
   const [visible, setVisible] = useState(false);
 
   const handleOk = () => {
@@ -24,6 +24,7 @@ const Repo = () => {
   const handleCancel = () => {
     setVisible(false);
   };
+
   return (
     <Container>
       <div className="left-side">
@@ -31,7 +32,7 @@ const Repo = () => {
           <div className="infos">
             <div className="main-name">
               <Link to="/user">
-                <h3>project-name-java</h3>
+                <h3>{repo?.full_name}</h3>
               </Link>
               <MdKeyboardArrowRight className="icon" />
             </div>

@@ -2,9 +2,9 @@ import React from "react";
 
 import { Container } from "./styles";
 
-export const Button = ({ text, width, margin }) => {
+export const Button = ({ text, width, margin, click }) => {
   return (
-    <Container width={width} margin={margin}>
+    <Container onClick={click} width={width} margin={margin}>
       <p>{text}</p>
     </Container>
   );

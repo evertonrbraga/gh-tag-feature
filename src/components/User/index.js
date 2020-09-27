@@ -10,33 +10,38 @@ import { IoMdTrash } from "react-icons/io";
 
 import { Container } from "./styles";
 
-const Repo = () => {
+const User = ({ user }) => {
+  const { id, avatar_url, name, login, company, location } = user;
   return (
     <Container>
       <div className="left-side">
         <div className="top">
-          <img
-            src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
-            alt="User avatar"
-          />
+          <img src={avatar_url} alt="User avatar" />
           <div className="infos">
             <div className="main-name">
-              <Link to="/user">
-                <h2>John Doe Santos</h2>
+              <Link
+                to={{
+                  pathname: "/user",
+                  state: {
+                    id,
+                  },
+                }}
+              >
+                <h2>{name}</h2>
               </Link>
               <MdKeyboardArrowRight className="icon" />
             </div>
-            <p>@johndoesantos</p>
+            <p>{login}</p>
           </div>
         </div>
         <div className="bottom">
           <span>
             <MdDomain />
-            <p>GO.K Digital</p>
+            <p>{company ? company : "undefined"}</p>
           </span>
           <span>
             <MdLocationOn />
-            <p>São Paulo, Brazil</p>
+            <p>{location ? location : "undefined"}</p>
           </span>
           <span>
             <MdStar />
@@ -53,4 +58,4 @@ const Repo = () => {
   );
 };
 
-export default Repo;
+export default User;
